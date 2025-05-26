@@ -1,6 +1,6 @@
 const  { asyncHandler }=require("../utils/asyncHandler")
 const User=require("../models/user.model");
-
+const jwt=require('jsonwebtoken');
 const loginUser=asyncHandler(async(req,res)=>{
     const {password,email}=req.body;
     let user=await User.findOne({email});

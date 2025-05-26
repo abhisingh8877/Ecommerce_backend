@@ -1,5 +1,3 @@
-
-const express=require('express')
 const {app}=require("./App.js")
 
 const {connectDB}=require('./db/dbConnect.js')
